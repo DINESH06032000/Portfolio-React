@@ -1119,7 +1119,7 @@ const Home = () => {
           </div>
 
           {/* Social Footer in Overlay */}
-          <div className="container-fluid py-4 d-flex justify-content-center d-none d-sm-flex">
+          <div className="container-fluid py-4 d-flex justify-content-center">
             <div className="glass-panel px-4 py-2 rounded-pill d-flex gap-4 flex-wrap justify-content-center">
               {portfolioData.socials.map((social, idx) => (
                 <a
