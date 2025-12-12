@@ -37,10 +37,10 @@ import {
   FaChartPie,
   FaCogs,
   FaUserSecret,
-  FaRegImage ,
+  FaRegImage,
   FaRobot,
   FaBoxOpen,
-  FaGlobe ,
+  FaGlobe,
   FaLock,
   FaDatabase,
   FaUserCircle,
@@ -49,16 +49,18 @@ import {
   FaChrome,
   FaCube,
   FaReact,
-  FaFileExcel,FaFigma ,FaGitAlt ,FaMousePointer 
+  FaFileExcel, FaFigma, FaGitAlt, FaMousePointer
 } from 'react-icons/fa';
-import { FaBuilding, FaNode, FaC, FaBootstrap, FaCreativeCommonsPdAlt, FaFileLines, FaFloppyDisk, FaHouseChimneyUser, FaSquareArrowUpRight, FaXmark, FaXTwitter,FaNoteSticky } from 'react-icons/fa6';
-import { SiSpringboot, SiMysql, SiCss3,SiVercel, SiMongodb,SiEclipseide,SiPostman,SiInsomnia,SiAdobeillustrator,SiAdobephotoshop,SiAndroidstudio,SiNetlify} from "react-icons/si";
+import { FaBuilding, FaNode, FaC, FaBootstrap, FaCreativeCommonsPdAlt, FaFileLines, FaFloppyDisk, FaHouseChimneyUser, FaSquareArrowUpRight, FaXmark, FaXTwitter, FaNoteSticky } from 'react-icons/fa6';
+import { SiSpringboot, SiMysql, SiCss3, SiVercel, SiMongodb, SiEclipseide, SiPostman, SiInsomnia, SiAdobeillustrator, SiAdobephotoshop, SiAndroidstudio, SiNetlify } from "react-icons/si";
 import { FaJsSquare } from "react-icons/fa";
 import { ImHtmlFive } from "react-icons/im";
-import { MdBarChart,MdFaceRetouchingOff } from "react-icons/md";
+import { MdBarChart, MdFaceRetouchingOff } from "react-icons/md";
 import { RiDashboardHorizontalFill } from "react-icons/ri";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { RxButton } from "react-icons/rx";
+
+
 // --- HELPER FUNCTION FOR PROGRESS BAR COLOR ---
 const getProgressColor = (percentage) => {
   if (percentage < 50) return 'bg-danger';
@@ -72,14 +74,10 @@ const RESUME_PDF_URL = "Resume.pdf";
 
 const portfolioData = {
   socials: [
-    { name: "Github", icon: <FaGithub size={24} />, link: "https://github.com/abinash-g/", color: "text-white" },
-    { name: "Discord", icon: <FaDiscord size={24} />, link: "https://discord.com/users/1090237597651046440/", color: "text-info" },
-    { name: "Instagram", icon: <FaInstagram size={24} />, link: "https://www.instagram.com/abinash_.g/", color: "text-danger" },
-    { name: "X (Twitter)", icon: <FaXTwitter size={24} />, link: "https://twitter.com/yourhandle", color: "text-white" },
-    { name: "LinkedIn", icon: <FaLinkedin size={24} />, link: "https://linkedin.com/in/abinash-g-051b92376/", color: "text-primary" },
-    { name: "Naukri", icon: <FaBriefcase size={24} />, link: "https://www.naukri.com/mnjuser/profile", color: "text-warning" },
-    { name: "WhatsApp", icon: <FaWhatsapp size={24} />, link: "https://wa.me/919360222849", color: "text-success" },
-    { name: "Email", icon: <FaEnvelope size={24} />, link: "mailto:abimadhu55555@gmail.com", color: "text-light" }
+    { name: "Github", icon: <FaGithub size={24} />, link: "https://github.com/DINESH06032000", color: "text-white" },
+    { name: "LinkedIn", icon: <FaLinkedin size={24} />, link: "https://www.linkedin.com/in/dinesh-p-548663226/", color: "text-primary" },
+    { name: "WhatsApp", icon: <FaWhatsapp size={24} />, link: "https://wa.me/919566995332", color: "text-success" },
+    { name: "Email", icon: <FaEnvelope size={24} />, link: "mailto:pd06032000@gmail.com", color: "text-light" }
   ],
 
   philosophy: [
@@ -122,17 +120,17 @@ const portfolioData = {
 
   tools: [
     { name: "Visual Code", icon: <BiLogoVisualStudio size={32} className="text-primary" /> },
-    { name: "Eclipse", icon: <SiEclipseide  size={32} className="text-light" /> },
-    { name: "Postman", icon: <SiPostman  size={32} className="text-danger" /> },
-    { name: "Insomnia", icon: <SiInsomnia  size={32} className="text-primary" /> },
-    { name: "Illustrator", icon: <SiAdobeillustrator  size={32} className="text-danger" /> },
-    { name: "Figma", icon: <FaFigma  size={32} className="text-light" /> },
-    { name: "Photoshop", icon: <SiAdobephotoshop  size={32} className="text-info" /> },
-    { name: "Github", icon: <FaGithub  size={32} className="text-secondary" /> },
-    { name: "Android studio", icon: <SiAndroidstudio  size={32} className="text-success" /> },
-    { name: "Netlify", icon: <SiNetlify  size={32} className="text-info" /> },
-    { name: "Vercel", icon: <SiVercel  size={32} className="text-secondary" /> },
-    { name: "Git", icon: <FaGitAlt  size={32} className="text-danger" /> }
+    { name: "Eclipse", icon: <SiEclipseide size={32} className="text-light" /> },
+    { name: "Postman", icon: <SiPostman size={32} className="text-danger" /> },
+    { name: "Insomnia", icon: <SiInsomnia size={32} className="text-primary" /> },
+    { name: "Illustrator", icon: <SiAdobeillustrator size={32} className="text-danger" /> },
+    { name: "Figma", icon: <FaFigma size={32} className="text-light" /> },
+    { name: "Photoshop", icon: <SiAdobephotoshop size={32} className="text-info" /> },
+    { name: "Github", icon: <FaGithub size={32} className="text-secondary" /> },
+    { name: "Android studio", icon: <SiAndroidstudio size={32} className="text-success" /> },
+    { name: "Netlify", icon: <SiNetlify size={32} className="text-info" /> },
+    { name: "Vercel", icon: <SiVercel size={32} className="text-secondary" /> },
+    { name: "Git", icon: <FaGitAlt size={32} className="text-danger" /> }
   ],
 
   projectCategories: [
@@ -166,7 +164,7 @@ const portfolioData = {
       desc: "Hooks on. UI strong.",
       list: [
         { title: "Portfolio", icon: <FaHouseChimneyUser size={28} className="text-success" />, desc: "A clean portfolio using React", link: "#" },
-        { title: "Tourist spot", icon: <FaGlobe  size={28} className="text-primary" />, desc: "Travel more, experience more, live more. (Still in process)", link: "https://indtourist.netlify.app/" },
+        { title: "Tourist spot", icon: <FaGlobe size={28} className="text-primary" />, desc: "Travel more, experience more, live more. (Still in process)", link: "https://indtourist.netlify.app/" },
         { title: "User-Dashboard", icon: <RiDashboardHorizontalFill size={28} className="text-danger" />, desc: "Data that works for you.", link: "https://user-interfaceses.netlify.app/" }
       ]
     },
@@ -177,7 +175,7 @@ const portfolioData = {
       desc: "Indentation is my superpower.",
       list: [
         { title: "Facial Image", icon: <MdFaceRetouchingOff size={28} className="text-danger" />, desc: "Safeguarding identity without losing clarity.", link: "https://github.com/DINESH06032000/Facial-image" },
-        { title: "Visual Art", icon: <FaRegImage  size={28} className="text-white" />, desc: "Prompts become pixels, imagination becomes reality.", link: "https://github.com/DINESH06032000/Visual-art" }
+        { title: "Visual Art", icon: <FaRegImage size={28} className="text-white" />, desc: "Prompts become pixels, imagination becomes reality.", link: "https://github.com/DINESH06032000/Visual-art" }
       ]
     },
     {
@@ -186,7 +184,7 @@ const portfolioData = {
       icon: <FaPython size={32} className="text-secondary" />,
       desc: "Designed with intent.",
       list: [
-        { title: "Cursor", icon: <FaMousePointer  size={28} className="text-white" />, desc: "Follow the pointer, feel the magic.", link: "#" },
+        { title: "Cursor", icon: <FaMousePointer size={28} className="text-white" />, desc: "Follow the pointer, feel the magic.", link: "#" },
         { title: "Buttons", icon: <RxButton size={28} className="text-primary" />, desc: "Click with purpose, design with style.", link: "#" }
       ]
     },
@@ -199,7 +197,7 @@ const portfolioData = {
         { title: "Epic Games", icon: <FaGamepad size={28} className="text-danger" />, desc: "Where every game finds its player.", link: "#" }
       ]
     }
-    
+
   ]
 };
 
@@ -731,39 +729,6 @@ const pages = {
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-      // ...................................................
-      // <div className="container text-center py-5">
-      //   <h2 className="display-4 fw-bold mb-5 text-white snap-in aquatico" style={{ '--r': '-5deg', '--x': '0px', '--y': '-50px', animationDelay: '0.1s' }}>My Philosophy</h2>
-      //   <div className="row g-4">
-      //     {portfolioData.philosophy.map((item, i) => {
-      //       const angle = (i % 2 === 0 ? 15 : -15) + (i * 5);
-      //       const tx = (i % 2 === 0 ? -30 : 30);
-      //       const ty = (i * 20) - 20;
-      //       const delay = 0.3 + (i * 0.2);
-
-      //       return (
-      //         <div key={i} className="col-md-4 snap-in" style={{
-      //           '--r': `${angle}deg`,
-      //           '--x': `${tx}px`,
-      //           '--y': `${ty}px`,
-      //           animationDelay: `${delay}s`
-      //         }}>
-      //           <div className="glass-panel p-4 rounded-4 h-100">
-      //             <h3 className="h5 text-white mb-3">{item.title}</h3>
-      //             <p className="text-white-50">{item.desc}</p>
-      //           </div>
-      //         </div>
-      //       );
-      //     })}
-      //   </div>
-      // </div>
     )
   },
   experience: {
@@ -839,6 +804,32 @@ const pages = {
           </div>
         </div>
       </div>
+
+      // <div className="container text-center py-5">
+      //   <h2 className="display-4 fw-bold mb-5 text-white snap-in aquatico" style={{ '--r': '-5deg', '--x': '0px', '--y': '-50px', animationDelay: '0.1s' }}>My Philosophy</h2>
+      //   <div className="row g-4">
+      //     {portfolioData.philosophy.map((item, i) => {
+      //       const angle = (i % 2 === 0 ? 15 : -15) + (i * 5);
+      //       const tx = (i % 2 === 0 ? -30 : 30);
+      //       const ty = (i * 20) - 20;
+      //       const delay = 0.3 + (i * 0.2);
+
+      //       return (
+      //         <div key={i} className="col-md-4 snap-in" style={{
+      //           '--r': `${angle}deg`,
+      //           '--x': `${tx}px`,
+      //           '--y': `${ty}px`,
+      //           animationDelay: `${delay}s`
+      //         }}>
+      //           <div className="glass-panel p-4 rounded-4 h-100">
+      //             <h3 className="h5 text-white mb-3">{item.title}</h3>
+      //             <p className="text-white-50">{item.desc}</p>
+      //           </div>
+      //         </div>
+      //       );
+      //     })}
+      //   </div>
+      // </div>
     )
   },
   skills: {
@@ -983,6 +974,31 @@ const pages = {
                     <span className="fw-bold text-white">{social.name}</span>
                   </div>
                 </a>
+              </div>
+            );
+          })}
+        </div>
+
+
+        <h2 className="display-4 fw-bold mt-5 mb-5 text-white snap-in aquatico" style={{ '--r': '-5deg', '--x': '0px', '--y': '-50px', animationDelay: '0.1s' }}>My Philosophy</h2>
+        <div className="row g-4">
+          {portfolioData.philosophy.map((item, i) => {
+            const angle = (i % 2 === 0 ? 15 : -15) + (i * 5);
+            const tx = (i % 2 === 0 ? -30 : 30);
+            const ty = (i * 20) - 20;
+            const delay = 0.3 + (i * 0.2);
+
+            return (
+              <div key={i} className="col-md-4 snap-in" style={{
+                '--r': `${angle}deg`,
+                '--x': `${tx}px`,
+                '--y': `${ty}px`,
+                animationDelay: `${delay}s`
+              }}>
+                <div className="glass-panel p-4 rounded-4 h-100">
+                  <h3 className="h5 text-white mb-3">{item.title}</h3>
+                  <p className="text-white-50">{item.desc}</p>
+                </div>
               </div>
             );
           })}
@@ -1176,7 +1192,7 @@ const Home = () => {
           {/* MOBILE BOTTOM DOCK (Hidden on Desktop, Separate from Desktop Wrapper) */}
           <div className="nav-dock-mobile d-flex d-md-none justify-content-between align-items-center pe-auto pointer-events-auto" style={{ zIndex: 50 }}>
             {Object.entries(pages).map(([key, data], index) => (
-              
+
               <button
                 key={key}
                 onClick={() => handleNavClick(key)}
@@ -1185,7 +1201,7 @@ const Home = () => {
               >
                 {React.cloneElement(data.icon, { size: 20 })}
               </button>
-            
+
             ))}
           </div>
 
