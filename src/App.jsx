@@ -55,7 +55,7 @@ import { FaBuilding, FaNode, FaC, FaBootstrap, FaCreativeCommonsPdAlt, FaFileLin
 import { SiSpringboot, SiMysql, SiCss3, SiVercel, SiMongodb, SiEclipseide, SiPostman, SiInsomnia, SiAdobeillustrator, SiAdobephotoshop, SiAndroidstudio, SiNetlify } from "react-icons/si";
 import { FaJsSquare } from "react-icons/fa";
 import { ImHtmlFive } from "react-icons/im";
-import { MdBarChart, MdFaceRetouchingOff } from "react-icons/md";
+import { MdBarChart, MdFaceRetouchingOff,MdDesignServices } from "react-icons/md";
 import { RiDashboardHorizontalFill } from "react-icons/ri";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { RxButton } from "react-icons/rx";
@@ -181,7 +181,7 @@ const portfolioData = {
     {
       id: "design",
       title: "Designs",
-      icon: <FaPython size={32} className="text-secondary" />,
+      icon: <MdDesignServices size={32} className="text-warning" />,
       desc: "Designed with intent.",
       list: [
         { title: "Cursor", icon: <FaMousePointer size={28} className="text-white" />, desc: "Follow the pointer, feel the magic.", link: "#" },
