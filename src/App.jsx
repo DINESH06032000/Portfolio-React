@@ -206,11 +206,8 @@ const themeConfig = {
 };
 
 const styles = `
-/* Import Nunito Font */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Rubik+Distressed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Mynerve&family=Rubik+Distressed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Mynerve&family=Rubik+Distressed&family=Grechen+Fuemen&display=swap');
 
 
 .panther {
@@ -222,6 +219,15 @@ const styles = `
     font-family: "Grechen Fuemen", cursive !important;
     letter-spacing: 1px;
 }
+
+@media (max-width: 576px) {
+  .panther123 {
+    font-size: 18px !important;
+  }
+}
+body,html{
+  overflox-x:hidden !important;
+  }
 
 /* Animation Keyframes */
 @keyframes slideInFromRight {
@@ -360,6 +366,7 @@ const styles = `
 .glass-button {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     display: flex;
@@ -404,6 +411,7 @@ const styles = `
 .glass-pill {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     color: white !important;
@@ -474,6 +482,7 @@ const styles = `
         flex-direction: row !important;
         background: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
         border-radius: 50px;
         padding: 8px 15px;
         width: auto;
@@ -491,6 +500,7 @@ const styles = `
         width: 100% !important;
         padding-left: 10px;  /* Prevent edge touching */
         padding-right: 10px;
+        overflow-x: hidden;
     }
 
     .glass-button {
@@ -507,6 +517,7 @@ const styles = `
         padding-bottom: 90px !important; 
         align-items: center !important;
         justify-content: center !important;
+        overflow-x: hidden;
     }
 
     .content-glass-card {
@@ -538,6 +549,13 @@ const styles = `
     .animate-page-enter-right { transform-origin: 75% 100% !important; }
     .animate-page-enter-bottom-right { transform-origin: 90% 100% !important; }
 }
+    .animate-page-enter-right,
+.animate-page-enter-left,
+.animate-page-enter-top,
+.animate-page-enter-bottom {
+  will-change: transform, opacity;
+}
+
 `;
 
 // --- PROJECT EXPLORER COMPONENT ---
@@ -804,32 +822,6 @@ const pages = {
           </div>
         </div>
       </div>
-
-      // <div className="container text-center py-5">
-      //   <h2 className="display-4 fw-bold mb-5 text-white snap-in aquatico" style={{ '--r': '-5deg', '--x': '0px', '--y': '-50px', animationDelay: '0.1s' }}>My Philosophy</h2>
-      //   <div className="row g-4">
-      //     {portfolioData.philosophy.map((item, i) => {
-      //       const angle = (i % 2 === 0 ? 15 : -15) + (i * 5);
-      //       const tx = (i % 2 === 0 ? -30 : 30);
-      //       const ty = (i * 20) - 20;
-      //       const delay = 0.3 + (i * 0.2);
-
-      //       return (
-      //         <div key={i} className="col-md-4 snap-in" style={{
-      //           '--r': `${angle}deg`,
-      //           '--x': `${tx}px`,
-      //           '--y': `${ty}px`,
-      //           animationDelay: `${delay}s`
-      //         }}>
-      //           <div className="glass-panel p-4 rounded-4 h-100">
-      //             <h3 className="h5 text-white mb-3">{item.title}</h3>
-      //             <p className="text-white-50">{item.desc}</p>
-      //           </div>
-      //         </div>
-      //       );
-      //     })}
-      //   </div>
-      // </div>
     )
   },
   skills: {
@@ -1085,7 +1077,7 @@ const Home = () => {
   };
 
   return (
-    <div className="position-relative w-100 vh-100 overflow-hidden text-white bg-black" style={{ fontFamily: "'Nunito', sans-serif" }}>
+    <div className="position-relative w-100 vh-100 overflow-hidden text-white" style={{ fontFamily: "'Nunito', sans-serif" }}>
       <style>{styles}</style>
 
       {/* 0. Black Screen until Image Loads (Prevents flash of empty content) */}
@@ -1102,7 +1094,7 @@ const Home = () => {
         <div className="position-fixed top-0 start-0 w-100 h-100 z-3 d-flex align-items-center justify-content-center"
           style={{ zIndex: 9999, backdropFilter: 'blur(8px)', backgroundColor: 'rgba(0,0,0,0.6)', transition: 'opacity 0.5s ease' }}>
           <div className="text-center">
-            <p className="h4 text-uppercase letter-spacing-2 text-white mb-3 panther" style={{ letterSpacing: '2px', minHeight: '1.5em' }}>
+            <p className="h4 text-uppercase letter-spacing-2 text-white mb-3 panther panther123" style={{ letterSpacing: '2px', minHeight: '1.5em', fontSize: '' }}>
               {line1}<span className="typing-cursor"></span>
             </p>
           </div>
@@ -1209,9 +1201,9 @@ const Home = () => {
           <div
             key={key}
             className={`main-content-wrapper position-absolute top-0 start-0 w-100 h-100 z-1 d-flex align-items-center justify-content-center p-3 ${getAnimationClass()}`}
-            style={{ backgroundColor: 'rgba(0,0,0,0.0)', backdropFilter: 'blur(2px)' }}
+            style={{ backgroundColor: 'rgba(0, 0, 0, 0)', backdropFilter: 'blur(2px)' }}
           >
-            <div className="main-container container-fluid d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 gap-md-5">
+            <div className="main-container container-fluid  d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 gap-md-5">
 
               {/* Desktop Big Icon */}
               <div className="d-none d-md-flex glass-panel p-5 rounded-circle shadow-lg " style={{ color: "white" }}>
@@ -1219,7 +1211,7 @@ const Home = () => {
               </div>
 
               {/* Mobile Small Icon */}
-              <div className="d-flex d-md-none glass-panel p-3 rounded-circle shadow-lg text-dark mb-3">
+              <div className="d-flex d-md-none glass-panel p-3 rounded-circle shadow-lg text-white mb-3">
                 {React.cloneElement(currentPage.icon, { size: 40 })}
               </div>
 
