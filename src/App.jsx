@@ -476,8 +476,7 @@ body,html{
 @media (max-width: 768px) {
     .nav-dock-mobile {
         position: fixed;
-        top:90%;
-        // bottom: 20px;
+        bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
         flex-direction: row !important;
