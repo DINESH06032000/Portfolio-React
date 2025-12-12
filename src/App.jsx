@@ -1084,7 +1084,7 @@ const Home = () => {
       )}
 
       {/* Backgrounds */}
-      <div className="position-fixed top-0 start-0 w-100 z-0 bg-cover-center" style={{ backgroundImage: `url("${themeConfig.bgImage}")`, filter: 'brightness(0.9) blur(3px)', transition: 'transform 10s ease',height:'100vh' }} />
+      <div className="position-fixed top-0 start-0 w-100 z-0 bg-cover-center" style={{ backgroundImage: `url("${themeConfig.bgImage}")`, filter: 'brightness(0.9) blur(3px)', transition: 'transform 10s ease', height: '100vh' }} />
       <div className="position-fixed top-0 start-0 w-100 h-100 z-0 pe-none" style={{ background: 'linear-gradient(to bottom right, rgba(30,58,138,0.4), transparent, rgba(0,0,0,0.8))' }} />
 
       {/* Loading (Typing Text) - Now transparent so background is visible */}
@@ -1112,9 +1112,10 @@ const Home = () => {
           </div>
 
           {/* Main Overlay Content */}
-          <div className="flex-grow-1 d-flex align-items-center text-white w-100">
-            {currentPage.exploreContent}
-            
+          <div>
+            <div className="flex-grow-1 d-flex align-items-center text-white w-100">
+              {currentPage.exploreContent}
+            </div>
           {/* Social Footer in Overlay */}
           <div className="container-fluid py-4 d-flex justify-content-center">
             <div className="glass-panel px-4 py-2 rounded-pill d-flex gap-4 flex-wrap justify-content-center">
