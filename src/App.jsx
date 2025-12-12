@@ -466,8 +466,8 @@ body,html{
 .bg-cover-center { background-size: cover; background-position: center; background-repeat: no-repeat; }
 .text-shadow { text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
 .explore-overlay {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 2000;
-    background: rgba(0, 0, 0, 0.9); overflow-y: auto ;overflow-x:hidden;
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2000;
+    background: rgba(0, 0, 0, 0.9);overflow-x:hidden;
 }
 .main-container {
     max-width: 75vw;
