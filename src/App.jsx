@@ -1114,8 +1114,7 @@ const Home = () => {
           {/* Main Overlay Content */}
           <div className="flex-grow-1 d-flex align-items-center text-white w-100">
             {currentPage.exploreContent}
-          </div>
-
+            
           {/* Social Footer in Overlay */}
           <div className="container-fluid py-4 d-flex justify-content-center">
             <div className="glass-panel px-4 py-2 rounded-pill d-flex gap-4 flex-wrap justify-content-center">
@@ -1136,6 +1135,8 @@ const Home = () => {
               ))}
             </div>
           </div>
+          </div>
+
         </div>
       )}
 
