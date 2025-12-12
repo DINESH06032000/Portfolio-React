@@ -1084,7 +1084,7 @@ const Home = () => {
       )}
 
       {/* Backgrounds */}
-      <div className="position-fixed top-0 start-0 w-100 h-100 z-0 bg-cover-center" style={{ backgroundImage: `url("${themeConfig.bgImage}")`, filter: 'brightness(0.9) blur(3px)', transition: 'transform 10s ease' }} />
+      <div className="position-fixed top-0 start-0 w-100 z-0 bg-cover-center" style={{ backgroundImage: `url("${themeConfig.bgImage}")`, filter: 'brightness(0.9) blur(3px)', transition: 'transform 10s ease',height:'100vh' }} />
       <div className="position-fixed top-0 start-0 w-100 h-100 z-0 pe-none" style={{ background: 'linear-gradient(to bottom right, rgba(30,58,138,0.4), transparent, rgba(0,0,0,0.8))' }} />
 
       {/* Loading (Typing Text) - Now transparent so background is visible */}
