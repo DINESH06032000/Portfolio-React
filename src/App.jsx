@@ -59,6 +59,7 @@ import { MdBarChart, MdFaceRetouchingOff,MdDesignServices } from "react-icons/md
 import { RiDashboardHorizontalFill } from "react-icons/ri";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { RxButton } from "react-icons/rx";
+import { LuShoppingCart } from "react-icons/lu";
 
 
 // --- HELPER FUNCTION FOR PROGRESS BAR COLOR ---
@@ -163,7 +164,8 @@ const portfolioData = {
       icon: <FaReact size={32} className="text-primary" />,
       desc: "Hooks on. UI strong.",
       list: [
-        { title: "Portfolio", icon: <FaHouseChimneyUser size={28} className="text-success" />, desc: "A clean portfolio using React", link: "#" },
+        { title: "Portfolio", icon: <FaHouseChimneyUser size={28} className="text-success" />, desc: "A clean portfolio using React", link: "https://dinesh-profiles.netlify.app/" },
+        { title: "GrandLine store", icon: <LuShoppingCart size={28} className="text-warning" />, desc: "Set sail on the Grand Line of shopping.", link: "https://grandline-store.netlify.app/" },
         { title: "Tourist spot", icon: <FaGlobe size={28} className="text-primary" />, desc: "Travel more, experience more, live more. (Still in process)", link: "https://indtourist.netlify.app/" },
         { title: "User-Dashboard", icon: <RiDashboardHorizontalFill size={28} className="text-danger" />, desc: "Data that works for you.", link: "https://user-interfaceses.netlify.app/" }
       ]
