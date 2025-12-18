@@ -144,7 +144,7 @@ const portfolioData = {
         { title: "PD Game Store", icon: <FaGamepad size={28} className="text-danger" />, desc: "A stylish and immersive gaming-themed site.", link: "https://dinesh06032000.github.io/pd-gaming/" },
         { title: "Portfolio", icon: <FaHouseChimneyUser size={28} className="text-success" />, desc: "A clean portfolio using HTML & CSS", link: "https://dinesh06032000.github.io/Frontend-Portfolio/" },
         { title: "Job-Board", icon: <FaBriefcase size={28} className="text-primary" />, desc: "Discover, apply, and grow your career", link: "https://dinesh06032000.github.io/Job-Board/" },
-        { title: "Rath Gaming", icon: <FaGamepad size={28} className="text-danger" />, desc: "A stylish and immersive gaming-themed site.", link: "https://dinesh06032000.github.io/portfolio/" },
+        { title: "Rath Gaming", icon: <FaGamepad size={28} className="text-danger" />, desc: "A stylish and immersive gaming-themed site.", link: "https://dinesh06032000.github.io/Rath-Gaming/" },
         { title: "G-Planet", icon: <FaGamepad size={28} className="text-danger" />, desc: "A stylish and immersive gaming-themed site.", link: "https://dinesh06032000.github.io/G-Planet/" },
       ]
     },
