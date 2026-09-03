@@ -45,8 +45,12 @@ import {
   FaDatabase,
   FaUserCircle,
   FaChevronLeft,
+  HiCube,
   FaWindows,
   FaChrome,
+  SiSpringsecurity,
+  IoIosCloud,
+  TbBrandOauth, SiJsonwebtokens,
   FaCube,
   FaReact,
   FaFileExcel, FaFigma, FaGitAlt, FaMousePointer
@@ -55,7 +59,7 @@ import { FaBuilding, FaNode, FaC, FaBootstrap, FaCreativeCommonsPdAlt, FaFileLin
 import { SiSpringboot, SiMysql, SiCss3, SiVercel, SiMongodb, SiEclipseide, SiPostman, SiInsomnia, SiAdobeillustrator, SiAdobephotoshop, SiAndroidstudio, SiNetlify } from "react-icons/si";
 import { FaJsSquare } from "react-icons/fa";
 import { ImHtmlFive } from "react-icons/im";
-import { MdBarChart, MdFaceRetouchingOff,MdDesignServices } from "react-icons/md";
+import { MdBarChart, MdFaceRetouchingOff, MdDesignServices } from "react-icons/md";
 import { RiDashboardHorizontalFill } from "react-icons/ri";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { RxButton } from "react-icons/rx";
@@ -88,7 +92,7 @@ const portfolioData = {
   ],
 
   about: {
-    intro: "I have 2 years of strong experience as a Full Stack Developer, building high-performance web applications with Java, Spring Boot, React, and SQL. I take ownership of both front-end and back-end development and deliver clean, scalable, and production-ready solutions.",
+    intro: "I am currently working as a Java Backend Developer, with 2 years of professional experience in developing scalable and high-performance applications using Java, Spring Boot, Spring Security, REST APIs, PostgreSQL, and microservices. I have hands-on experience in designing backend services, implementing secure and reliable APIs, integrating databases, and working with microservice communication.",
     image: "Profile.jpg",
     location: "Vellore, India",
     email: "pd06032000@gmail.com",
@@ -102,21 +106,20 @@ const portfolioData = {
 
   skills: [
     { name: "Java", percentage: 95, icon: <FaJava size={32} className="text-danger" /> },
-    { name: "SpringBoot", percentage: 90, icon: <SiSpringboot size={32} className="text-success" /> },
-    { name: "My SQL", percentage: 100, icon: <SiMysql size={32} className="text-warning" /> },
-    { name: "HTML", percentage: 100, icon: <ImHtmlFive size={32} className="text-danger" /> },
-    { name: "CSS", percentage: 100, icon: <SiCss3 size={32} className="text-primary" /> },
-    { name: "Javascript", percentage: 80, icon: <FaJsSquare size={32} className="text-warning" /> },
+    { name: "SpringBoot", percentage: 95, icon: <SiSpringboot size={32} className="text-success" /> },
+    { name: "Microservices", percentage: 90, icon: < HiCube size={32} className="text-success" /> },
+    { name: "Sprig Security", percentage: 90, icon: <SiSpringsecurity size={32} className="text-success" /> },
+    { name: "Sprig Cloud", percentage: 90, icon: <IoIosCloud size={32} className="text-success" /> },
+    { name: "OAuth2", percentage: 90, icon: <TbBrandOauth size={32} className="text-success" /> },
+    { name: "JWT", percentage: 90, icon: <SiJsonwebtokens size={32} className="text-success" /> },
+    { name: "Postgresql", percentage: 100, icon: <SiMysql size={32} className="text-warning" /> },
+    { name: "MySQL", percentage: 100, icon: <SiMysql size={32} className="text-warning" /> },
     { name: "React", percentage: 80, icon: <FaReact size={32} className="text-primary" /> },
     { name: "Node", percentage: 60, icon: <FaNode size={32} className="text-success" /> },
     { name: "JSP", percentage: 90, icon: <FaJava size={32} className="text-warning" /> },
     { name: "C", percentage: 80, icon: <FaC size={32} className="text-danger" /> },
     { name: "MongoDB", percentage: 70, icon: <SiMongodb size={32} className="text-success" /> },
-    { name: "Python", percentage: 50, icon: <FaPython size={32} className="text-warning" /> },
-    { name: "Bootstrap", percentage: 95, icon: <FaBootstrap size={32} className="text-primary" /> },
-    { name: "PowerBI", percentage: 60, icon: <MdBarChart size={32} className="text-warning" /> },
-    { name: "Excel", percentage: 80, icon: <FaFileExcel size={32} className="text-success" /> },
-    { name: "Linux", percentage: 35, icon: <FaTerminal size={32} className="text-light" /> }
+    { name: "Bootstrap", percentage: 95, icon: <FaBootstrap size={32} className="text-primary" /> }
   ],
 
   tools: [
@@ -681,7 +684,7 @@ const pages = {
             <div className="glass-panel p-4 rounded-4 snap-in" style={{ '--r': '2deg', '--x': '-10px', '--y': '10px', animationDelay: '0.1s' }}>
               <img src={portfolioData.about.image} alt="Profile" className="img-fluid mb-3 border border-3 border-white border-opacity-25" style={{ width: '180px', height: '180px', objectFit: 'cover', borderRadius: '34% 66% 70% 30% / 48% 35% 65% 52% ' }} />
               <h3 className="h4 fw-bold text-white mb-1 panther">DINESH PADMANABAN</h3>
-              <p className="text-info small mb-3">Java Full Stack & Software Developer</p>
+              <p className="text-info small mb-3">Java Backend Developer</p>
 
               <div className="d-flex flex-column gap-2 text-start small text-white-50">
                 <div className="d-flex align-items-center gap-2">
@@ -765,6 +768,36 @@ const pages = {
             <div className="glass-panel p-4 rounded-4 h-100">
               <h4 className="aquatico text-white mb-4 d-flex justify-content-between align-items-center gap-2 border-bottom border-white border-opacity-10 pb-2">
                 <span className='d-flex align-items-center gap-3'>
+                  <FaBuilding className="text-primary me-1" /> Stackly
+                </span>
+                <span>
+                  Bengaluru, KA
+                </span>
+              </h4>
+              <div className="d-flex flex-column gap-4">
+                <div className="d-flex flex-column flex-md-row justify-content-between align-items-start gap-2">
+                  <div>
+                    Java Backend Developer
+                  </div>
+                  <div className="text-md-end">
+                    <span className="badge bg-primary bg-opacity-50 mb-1">Jan 2026 - Prsent</span>
+                  </div>
+                </div>
+                <div className="row g-3">
+                  <div className="col-12">
+                    <div className="glass-panel project-card p-3 rounded-4 h-100">
+                      I develop scalable and high-performance backend applications using Java, Spring Boot, Spring Security, REST APIs, PostgreSQL, and microservices. I design secure and reliable APIs, implement efficient database integrations, and work with technologies such as OpenFeign, API Gateway, Eureka, Kafka, and Resilience4j.                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 snap-in" style={{ '--r': '0deg', '--x': '0px', '--y': '20px', animationDelay: '0.2s' }}>
+            <div className="glass-panel p-4 rounded-4 h-100">
+              <h4 className="aquatico text-white mb-4 d-flex justify-content-between align-items-center gap-2 border-bottom border-white border-opacity-10 pb-2">
+                <span className='d-flex align-items-center gap-3'>
                   <FaBuilding className="text-primary me-1" /> i5 Technologies
                 </span>
                 <span>
@@ -777,7 +810,7 @@ const pages = {
                     Java Full Stack Developer
                   </div>
                   <div className="text-md-end">
-                    <span className="badge bg-primary bg-opacity-50 mb-1">Sep 2023 - Present</span>
+                    <span className="badge bg-primary bg-opacity-50 mb-1">Sep 2024 - Dec 2025</span>
                   </div>
                 </div>
                 <div className="row g-3">
@@ -808,7 +841,7 @@ const pages = {
                     Software Developer
                   </div>
                   <div className="text-md-end">
-                    <span className="badge bg-primary bg-opacity-50 mb-1">Jan 2023 - Aug 2023</span>
+                    <span className="badge bg-primary bg-opacity-50 mb-1">Jan 2024 - Aug 2024</span>
                   </div>
                 </div>
                 <div className="row g-3">
@@ -1119,26 +1152,26 @@ const Home = () => {
             <div className="flex-grow-1 d-flex align-items-center text-white w-100">
               {currentPage.exploreContent}
             </div>
-          {/* Social Footer in Overlay */}
-          <div className="container-fluid py-4 d-flex justify-content-center">
-            <div className="glass-panel px-4 py-2 rounded-pill d-flex gap-4 flex-wrap justify-content-center">
-              {portfolioData.socials.map((social, idx) => (
-                <a
-                  key={idx}
-                  href={social.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white text-decoration-none d-flex align-items-center gap-2 hover-scale transition p-1"
-                  style={{ transition: 'transform 0.2s' }}
-                  onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.2)'}
-                  onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                  title={social.name}
-                >
-                  {React.cloneElement(social.icon, { size: 20 })}
-                </a>
-              ))}
+            {/* Social Footer in Overlay */}
+            <div className="container-fluid py-4 d-flex justify-content-center">
+              <div className="glass-panel px-4 py-2 rounded-pill d-flex gap-4 flex-wrap justify-content-center">
+                {portfolioData.socials.map((social, idx) => (
+                  <a
+                    key={idx}
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-decoration-none d-flex align-items-center gap-2 hover-scale transition p-1"
+                    style={{ transition: 'transform 0.2s' }}
+                    onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.2)'}
+                    onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                    title={social.name}
+                  >
+                    {React.cloneElement(social.icon, { size: 20 })}
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
           </div>
 
         </div>
