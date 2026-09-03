@@ -58,6 +58,7 @@ import { HiCube } from "react-icons/hi2";
 import { ImHtmlFive } from "react-icons/im";
 import { IoIosCloud } from "react-icons/io";
 import { TbBrandOauth } from "react-icons/tb";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { MdBarChart, MdFaceRetouchingOff, MdDesignServices } from "react-icons/md";
 import { RiDashboardHorizontalFill } from "react-icons/ri";
 import { BiLogoVisualStudio } from "react-icons/bi";
@@ -107,11 +108,11 @@ const portfolioData = {
     { name: "Java", percentage: 95, icon: <FaJava size={32} className="text-danger" /> },
     { name: "SpringBoot", percentage: 95, icon: <SiSpringboot size={32} className="text-success" /> },
     { name: "Microservices", percentage: 90, icon: <HiCube size={32} className="text-success" /> },
-    { name: "Sprig Security", percentage: 90, icon: <SiSpringsecurity size={32} className="text-success" /> },
-    { name: "Sprig Cloud", percentage: 90, icon: <IoIosCloud size={32} className="text-success" /> },
-    { name: "OAuth2", percentage: 90, icon: <TbBrandOauth size={32} className="text-success" /> },
+    { name: "Sprig Security", percentage: 90, icon: <SiSpringsecurity size={32} className="text-danger" /> },
+    { name: "Sprig Cloud", percentage: 90, icon: <IoIosCloud size={32} className="text-white" /> },
+    { name: "OAuth2", percentage: 90, icon: <TbBrandOauth size={32} className="text-secondary" /> },
     { name: "JWT", percentage: 90, icon: <SiJsonwebtokens size={32} className="text-success" /> },
-    { name: "Postgresql", percentage: 100, icon: <SiMysql size={32} className="text-warning" /> },
+    { name: "Postgresql", percentage: 100, icon: <BiLogoPostgresql size={32} className="text-info" /> },
     { name: "MySQL", percentage: 100, icon: <SiMysql size={32} className="text-warning" /> },
     { name: "React", percentage: 80, icon: <FaReact size={32} className="text-primary" /> },
     { name: "Node", percentage: 60, icon: <FaNode size={32} className="text-success" /> },
