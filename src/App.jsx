@@ -107,7 +107,7 @@ const portfolioData = {
   skills: [
     { name: "Java", percentage: 95, icon: <FaJava size={32} className="text-danger" /> },
     { name: "SpringBoot", percentage: 95, icon: <SiSpringboot size={32} className="text-success" /> },
-    { name: "Microservices", percentage: 90, icon: < HiCube size={32} className="text-success" /> },
+    { name: "Microservices", percentage: 90, icon: <HiCube size={32} className="text-success" /> },
     { name: "Sprig Security", percentage: 90, icon: <SiSpringsecurity size={32} className="text-success" /> },
     { name: "Sprig Cloud", percentage: 90, icon: <IoIosCloud size={32} className="text-success" /> },
     { name: "OAuth2", percentage: 90, icon: <TbBrandOauth size={32} className="text-success" /> },
