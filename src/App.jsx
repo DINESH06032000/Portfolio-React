@@ -667,9 +667,9 @@ const ProjectExplorer = ({ categories }) => {
 // --- PAGE DEFINITIONS ---
 const pages = {
   home: {
-    title: "DINESH",
-    subtitle: "Java Full Stack & Software Developer",
-    content: "I build powerful digital experiences by combining clean backend architecture with dynamic, interactive React interfaces. Explore my work to see how I transform ideas into fast, seamless, and scalable applications.",
+    title: "DINESH PADMANABAN",
+    subtitle: "Java Backend Developer",
+    content: "I build scalable and high-performance backend solutions using Java, Spring Boot, Spring Security, REST APIs, PostgreSQL, and microservices. I focus on designing clean architectures, secure APIs, efficient database integrations, and reliable service communication.",
     icon: <FaCreativeCommonsPdAlt size={24} />,
     side: 'left',
     animationDirection: 'top-left',
