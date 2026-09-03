@@ -45,20 +45,19 @@ import {
   FaDatabase,
   FaUserCircle,
   FaChevronLeft,
-  HiCube,
   FaWindows,
-  FaChrome,
-  SiSpringsecurity,
-  IoIosCloud,
-  TbBrandOauth, SiJsonwebtokens,
+  FaChrome, 
   FaCube,
   FaReact,
   FaFileExcel, FaFigma, FaGitAlt, FaMousePointer
 } from 'react-icons/fa';
 import { FaBuilding, FaNode, FaC, FaBootstrap, FaCreativeCommonsPdAlt, FaFileLines, FaFloppyDisk, FaHouseChimneyUser, FaSquareArrowUpRight, FaXmark, FaXTwitter, FaNoteSticky } from 'react-icons/fa6';
-import { SiSpringboot, SiMysql, SiCss3, SiVercel, SiMongodb, SiEclipseide, SiPostman, SiInsomnia, SiAdobeillustrator, SiAdobephotoshop, SiAndroidstudio, SiNetlify } from "react-icons/si";
+import { SiSpringboot, SiMysql, SiCss3,SiJsonwebtokens ,SiSpringsecurity, SiVercel, SiMongodb, SiEclipseide, SiPostman, SiInsomnia, SiAdobeillustrator, SiAdobephotoshop, SiAndroidstudio, SiNetlify } from "react-icons/si";
 import { FaJsSquare } from "react-icons/fa";
+import { HiCube } from "react-icons/hi2";
 import { ImHtmlFive } from "react-icons/im";
+import { IoIosCloud } from "react-icons/io";
+import { TbBrandOauth } from "react-icons/tb";
 import { MdBarChart, MdFaceRetouchingOff, MdDesignServices } from "react-icons/md";
 import { RiDashboardHorizontalFill } from "react-icons/ri";
 import { BiLogoVisualStudio } from "react-icons/bi";
